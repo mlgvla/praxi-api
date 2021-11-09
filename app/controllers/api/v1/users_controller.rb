@@ -5,6 +5,10 @@ class Api::V1::UsersController < ApplicationController
         @users = User.all
         render json: UserSerializer.new(@users)
     end
+
+    def profile
+        render json: { user: UserSerializer.new(current_user) }, status: :accepted
+    end
   
     def create
       @user = User.create(user_params)
