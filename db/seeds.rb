@@ -8,3 +8,5 @@
 users = User.create([ {username: "mlgvla", email: "monica@test.com", password: "swordfish", role: "student" }])
 
 categories = Category.create([{name: "Scales"}, {name: "Etudes"}, {name: "Repertoire"}, {name: "Chamber Music"}, {name: "Orchestra Excerpts"}])
+
+instruments = Instrument.create([{name: "Violin"}, {name: "Viola"}, {name: "Cello"}, {name: "Contrabass"}, {name: "Piano"}])
